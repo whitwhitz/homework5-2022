@@ -167,7 +167,6 @@ header{
     }
 
     .pricing{
-        align-items: flex-end;
         flex-direction: row;
         flex-wrap: nowrap;
     }
