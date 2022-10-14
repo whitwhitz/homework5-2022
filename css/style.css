@@ -28,8 +28,6 @@ header{
     border-top-right-radius: 50px;
 }
 
-
-
 .nav_links{
     display: flex;
     flex-direction: column;
@@ -56,7 +54,6 @@ header{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
 }
 
 .gallery img{
@@ -94,11 +91,96 @@ header{
         flex-basis: 275px;
 
     }
-    
-    @media screen and (prefers-reduced-motion) { 
-        #logo {
-            animation-duration: 0s;
-        }
+
+    body > header{
+        position: sticky;
+        top: 0px;
+        width: 100%;
     }
 
+    
+
+}
+
+@media screen and (prefers-reduced-motion) { 
+    #logo {
+        animation-duration: 0s;
+    }
+}
+
+/* THIS IS ACTUALLY PRINT SCREEN I JUST WANTED THE ABILITY TO INSPECT */
+/* @media screen and (min-width: 1100px){
+    body{
+        font-family: Arial, Helvetica;
+        background-image: none;
+    }
+
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 8em;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing{
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .card{
+        border: solid 2px #45ADDD;
+        flex-basis: 325px;
+    }
+
+    #gallery, .gallery{
+        display: none;
+    }
+
+    .card li:nth-child(2):after{
+        content: "\1F44D";
+    }
+} */
+
+@media print{
+    body{
+        font-family: Arial, Helvetica;
+        background-image: none;
+    }
+
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 8em;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing{
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .card{
+        border: solid 2px #45ADDD;
+        flex-basis: 325px;
+    }
+
+    #gallery, .gallery{
+        display: none;
+    }
+
+    .card li:nth-child(2):after{
+        content: "\1F44D";
+    }
 }
